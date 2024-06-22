@@ -87,14 +87,10 @@ To create a new story, follow these steps:
 
 If you'd like to contribute to this project, fork the repository and submit a pull request. Your contributions are welcome!
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-```
-
 ### Notes:
 - **File Paths**: Adjust file paths (`stories/{storyPath}/`) according to your project's structure.
 - **JSON Structure**: Ensure your `story.json` follows a structured format with steps, choices, and image file types specified.
 - **Customization**: Encourage users to customize CSS styles and extend story features as needed.
 
-This README.md file provides comprehensive guidance on setting up and using your interactive storytelling project on GitHub, covering initial setup, story creation, JSON data formatting, image integration, and more. Adjust and expand the instructions as per your specific project requirements and user needs.
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
