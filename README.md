@@ -3,3 +3,99 @@ Client-side customizable game where players create their own story through inter
 
 # Demo
 [https://jadehamel.fr/game](https://jadehamel.fr/game)
+
+```markdown
+# Your Choices Story
+
+ Your Choices Story (StoryChoicesJs) is a project where you can create interactive stories with choices for the player.
+
+## Setup
+
+### Getting Started
+
+1. **Clone the Repository:**
+
+   ```bash
+   git clone https://github.com/jadehamel/your-choices-story.git
+   cd your-choices-story
+   ```
+
+2. **Folder Structure:**
+
+   - Place your story's images in `stories/{storyPath}/images/`.
+   - Create a JSON file named `story.json` in `stories/{storyPath}/` to define your story's structure (details below).
+   - Optionally, customize styles in `stories/{storyPath}/style.css`.
+
+3. **Modify `index.html`:**
+
+   Update the following variables in `index.html` to match your story:
+
+   ```javascript
+   const storyPath = "yourlover";  // Replace with your story folder name
+   const playerName = prompt("What's your name?");  // Prompt to get player's name
+   ```
+
+## Creating a New Story
+
+To create a new story, follow these steps:
+
+1. **Define Story Structure (`story.json`):**
+
+   ```json
+   {
+     "title": "Your Story Title",
+     "intro_stepname": "start",
+     "people": [
+       {"role": "{playerName}", "name": "playerName"}  // Placeholder for player's name
+     ],
+     "steps": {
+       "start": {
+         "text": "Once upon a time, {playerName} woke up in a mysterious place...",
+         "choices": [
+           {"text": "Explore further", "next": "explore"},
+           {"text": "Stay put", "next": "stay"}
+         ]
+       },
+       "explore": {
+         "text": "As {playerName} ventured deeper, a strange figure appeared...",
+         "choices": [
+           {"text": "Approach the figure", "next": "approach"},
+           {"text": "Run away", "next": "run"}
+         ]
+       },
+       // Add more steps as needed
+     },
+     "img_types": ".jpg"  // Image file type
+   }
+   ```
+
+   - Replace placeholders like `{playerName}` with appropriate text.
+
+2. **Add Images:**
+
+   - For each step in your story, place an image file in `stories/{storyPath}/` named according to the step name (e.g., `intro.png`, `step1.jpg`).
+
+3. **Modify CSS (Optional):**
+
+   Customize styles in `stories/{storyPath}/style.css` to match your story's theme.
+
+## Running the Game
+
+- Open `index.html` in a web browser or serve it locally using a web server.
+- The game will prompt the player for their name and begin the story accordingly.
+
+## Contributing
+
+If you'd like to contribute to this project, fork the repository and submit a pull request. Your contributions are welcome!
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+```
+
+### Notes:
+- **File Paths**: Adjust file paths (`stories/{storyPath}/`) according to your project's structure.
+- **JSON Structure**: Ensure your `story.json` follows a structured format with steps, choices, and image file types specified.
+- **Customization**: Encourage users to customize CSS styles and extend story features as needed.
+
+This README.md file provides comprehensive guidance on setting up and using your interactive storytelling project on GitHub, covering initial setup, story creation, JSON data formatting, image integration, and more. Adjust and expand the instructions as per your specific project requirements and user needs.
