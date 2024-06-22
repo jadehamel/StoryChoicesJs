@@ -6,6 +6,7 @@ const playerName = prompt("What's your name?");
 const story = document.getElementById('story');
 const options = document.getElementById('options');
 const image = document.getElementById('image');
+let currentIndex = 0;
 
 function loadStyles() {
   let link = document.createElement('link');
@@ -39,6 +40,7 @@ function updateStory(storyPath, nodeId) {
     updateRoles(node);
     updateOptions(node, storyPath);
     image.src = "stories/" + storyPath + "/" + nodeId + storyData.img_types
+    startSlideShow(image, [image.src, "stories/yourlover/firstEncounter_distant.png"]);
 }
 
 function updateRoles(node) {
@@ -60,6 +62,24 @@ function updateOptions(node, storyName) {
     options.appendChild(button);
   });
 };
+
+function startSlideShow(image, images) {
+  images.src = images[currentIndex];
+  setTimeout(() => {
+    image.style.opacity = 1; // Change opacity to 1 to trigger the fade-in
+  }, 5000);
+  if (images.length > 1) {
+    setTimeout(() => {
+      if (currentIndex < images.length - 1) {
+        currentIndex++;
+        setTimeout(startSlideShow(image, images), 3000); // Wait for the fade-out transition to complete before changing the image
+      }
+    }, 8000); // Display image for 5 seconds + 3 seconds fade-in time
+  } else {
+    image.style.opacity = 1;
+    currentIndex = 0;
+  }
+}
 
 function startGame(storyName, step) {
   updateStory(storyName, step);
