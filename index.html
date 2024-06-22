@@ -1,33 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
-    <title>Your Story Game</title>
-    <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Playwrite+AU+NSW:wght@100..400&family=Playwrite+DE+Grund:wght@100..400&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playwrite+AU+NSW:wght@100..400&family=Playwrite+DE+Grund:wght@100..400&display=swap" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="styles.css">
-</head>
-<body>
-  <div id="game">
-    <h1 id="title"></h1>
-    <div id="story"></div>
-    <div id="options"></div>
-    <img id="image">
-  </div>
-  <script>
-      //Path (images & JSON) of the story in "stories/{storyPath}/"
+    <title>Your Choices Story</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+AU+NSW:wght@100..400&family=Playwrite+DE+Grund:wght@100..400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playwrite+AU+NSW:wght@100..400&family=Playwrite+DE+Grund:wght@100..400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+  <body>
+    <div id="game">
+      <div id="title"></div>
+      <div id="story"></div>
+      <div id="options"></div>
+      <img id="image">
+    </div>
+    <script>
+      //Path (images, JSON & Stylesheet) of the story in "stories/{storyPath}/"
       const storyPath = "yourlover";
-
       const playerName = prompt("What's your name?");
-
       const story = document.getElementById('story');
       const options = document.getElementById('options');
       const image = document.getElementById('image');
