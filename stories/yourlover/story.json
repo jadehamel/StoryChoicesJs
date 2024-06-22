@@ -73,8 +73,8 @@
     "declineIntervention": {
       "text": "You decline the intervention and decide to handle things on your own. The situation with {loverName} continues to worsen.",
       "choices": [
-        { "text": "Talk to {friendName} again", "next": "friendHelp" },
-        { "text": "Confront {loverName} alone", "next": "confrontation" }
+        { "text": "Talk to the friend again", "next": "friendHelp" },
+        { "text": "Confront him alone", "next": "confrontation" }
       ]
     },
     "friendHelp": {
