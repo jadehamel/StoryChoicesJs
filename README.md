@@ -4,7 +4,6 @@ Client-side customizable game where players create their own story through inter
 # Demo
 [https://jadehamel.fr/game](https://jadehamel.fr/game)
 
-```markdown
 # Your Choices Story
 
  Your Choices Story (StoryChoicesJs) is a project where you can create interactive stories with choices for the player.
