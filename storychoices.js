@@ -41,7 +41,7 @@ window.onload = function() {
   continueButton.textContent = 'Continue';
   
   form.appendChild(yourNameLabel);
-  form.appendChild(yourNameInput).value.toUpperCase();;
+  form.appendChild(yourNameInput).value.toUpperCase();
   //hidding feature in dev. (using new property from json for certain roles to be set by the player on Start)
   form.appendChild(familyMemberNameLabel).style.display = 'none';
   form.appendChild(familyMemberNameInput).style.display = 'none';
