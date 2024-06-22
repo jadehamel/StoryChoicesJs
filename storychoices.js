@@ -18,8 +18,8 @@ window.onload = function() {
   form.id = 'startForm';
   
   const yourNameLabel = document.createElement('label');
-  yourNameLabel.for = 'playerName';
-  yourNameLabel.textContent = 'Your name:';
+  yourNameLabel.for = 'yourName';
+  yourNameLabel.textContent = 'Your Name';
   const yourNameInput = document.createElement('input');
   yourNameInput.type = 'text';
   yourNameInput.id = 'yourName';
