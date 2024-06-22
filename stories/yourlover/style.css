@@ -53,3 +53,37 @@ body {
   width: 100%;
   transition: opacity 3s ease-in-out;
 }
+#container {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+}
+#StartScreen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background-color: #000000; /* Change to desired background color */
+}
+
+#startForm {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#startForm label {
+  margin: 5px 0;
+}
+
+#startForm input {
+  margin: 5px 0;
+}
+
+#continueButton {
+  margin-top: 10px;
+  padding: 5px 10px;
+}
