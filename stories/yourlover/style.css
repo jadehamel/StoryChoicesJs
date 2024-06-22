@@ -17,8 +17,11 @@ body {
 }
 #title {
   font-family: "Bebas Neue", sans-serif;
-  font-weight: 400;
+  font-optical-sizing: auto;
+  font-weight: 100;
   font-style: normal;
+  font-size: 80px;
+  text-align: center;
 }
 #options {
   text-align: center;
