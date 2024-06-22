@@ -72,7 +72,7 @@ To create a new story, follow these steps:
 
 2. **Add Images:**
 
-   - For each step in your story, place an image file in `stories/{storyPath}/` named according to the step name (e.g., `intro.png`, `step1.jpg`).
+   - For each step in your story, place an image file in `stories/{storyPath}/` named according to the step name (e.g., `start.png`, `explore.jpg`).
 
 3. **Modify CSS (Optional):**
 
