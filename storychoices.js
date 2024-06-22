@@ -42,8 +42,9 @@ window.onload = function() {
   
   form.appendChild(yourNameLabel);
   form.appendChild(yourNameInput);
-  form.appendChild(familyMemberNameLabel);
-  form.appendChild(familyMemberNameInput);
+  //hidding feature in dev. (using new property from json for certain roles to be set by the player on Start)
+  form.appendChild(familyMemberNameLabel).style.display = 'none';
+  form.appendChild(familyMemberNameInput).style.display = 'none';
   form.appendChild(continueButton);
 
   startScreen.appendChild(form);
