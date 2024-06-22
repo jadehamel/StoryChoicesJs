@@ -1,1 +1,161 @@
-
+{
+  "title": "Your Lover Game",
+  "img_types": ".png",
+  "intro_stepname": "intro",
+  "people": [
+    { "role": "{loverName}", "name": "Jordan" },
+    { "role": "{friendName}", "name": "Skylar" },
+    { "role": "{detectiveName}", "name": "Finley" },
+    { "role": "{familyMemberName}", "name": "Casey" }
+  ],
+  "steps": {
+    "intro": {
+      "text": "You, {playerName}, have just moved to a new town. It's quiet and seems like the perfect place to start fresh. One day, while at a local café, you meet {loverName}. They seem charming and friendly.",
+      "choices": [
+        { "text": "Be friendly", "next": "firstEncounter_friendly" },
+        { "text": "Be distant", "next": "firstEncounter_distant" }
+      ]
+    },
+    "firstEncounter_friendly": {
+      "text": "{loverName} smiles warmly at you. 'It's nice to meet someone new in town,' they say. Over the next few days, you notice {loverName} showing up wherever you go. You also start making friends, including {friendName}, who becomes quite close to you.",
+      "choices": [
+        { "text": "Confront them", "next": "growingObsession_confront" },
+        { "text": "Ignore them", "next": "growingObsession_ignore" },
+        { "text": "Seek help", "next": "growingObsession_help" }
+      ]
+    },
+    "firstEncounter_distant": {
+      "text": "{loverName} seems taken aback by your distance but doesn't push further. Over the next few days, you notice {loverName} showing up wherever you go. You also start making friends, including {friendName}, who becomes quite close to you.",
+      "choices": [
+        { "text": "Confront them", "next": "growingObsession_confront" },
+        { "text": "Ignore them", "next": "growingObsession_ignore" },
+        { "text": "Seek help", "next": "growingObsession_help" }
+      ]
+    },
+    "growingObsession_confront": {
+      "text": "You decide to confront {loverName}. They seem hurt but agree to give you some space. However, you still feel watched. The situation escalates quickly. {loverName} starts showing up at your workplace and even around your home.",
+      "choices": [
+        { "text": "Talk to your family", "next": "talkToFamily" },
+        { "text": "Seek police help", "next": "policeIntervention" },
+        { "text": "Hire a private detective", "next": "privateDetective" }
+      ]
+    },
+    "growingObsession_ignore": {
+      "text": "You try to ignore {loverName}, but their presence becomes more unsettling. You receive messages from them daily. The situation escalates quickly. {loverName} starts showing up at your workplace and even around your home.",
+      "choices": [
+        { "text": "Talk to your family", "next": "talkToFamily" },
+        { "text": "Seek police help", "next": "policeIntervention" },
+        { "text": "Hire a private detective", "next": "privateDetective" }
+      ]
+    },
+    "growingObsession_help": {
+      "text": "You talk to {friendName} about {loverName}. They advise you to be cautious and offer their support. The situation escalates quickly. {loverName} starts showing up at your workplace and even around your home.",
+      "choices": [
+        { "text": "Talk to your family", "next": "talkToFamily" },
+        { "text": "Seek police help", "next": "policeIntervention" },
+        { "text": "Hire a private detective", "next": "privateDetective" }
+      ]
+    },
+    "talkToFamily": {
+      "text": "You decide to talk to your family about the situation. {familyMemberName} is particularly worried and suggests a family intervention.",
+      "choices": [
+        { "text": "Agree to intervention", "next": "familyIntervention" },
+        { "text": "Decline intervention", "next": "declineIntervention" }
+      ]
+    },
+    "familyIntervention": {
+      "text": "You agree to the family intervention. {familyMemberName} confronts {loverName} with you. {loverName} reacts aggressively.",
+      "choices": [
+        { "text": "Call the police", "next": "policeIntervention" },
+        { "text": "Handle it yourself", "next": "handleItYourself" }
+      ]
+    },
+    "declineIntervention": {
+      "text": "You decline the intervention and decide to handle things on your own. The situation with {loverName} continues to worsen.",
+      "choices": [
+        { "text": "Talk to {friendName} again", "next": "friendHelp" },
+        { "text": "Confront {loverName} alone", "next": "confrontation" }
+      ]
+    },
+    "friendHelp": {
+      "text": "You confide in {friendName} again. They suggest involving a private detective or going to the police.",
+      "choices": [
+        { "text": "Hire a private detective", "next": "privateDetective" },
+        { "text": "Seek police help", "next": "policeIntervention" }
+      ]
+    },
+    "privateDetective": {
+      "text": "You hire {detectiveName}, a private detective. They start investigating {loverName}'s background.",
+      "choices": [
+        { "text": "Cooperate with detective", "next": "detectiveCooperation" },
+        { "text": "Take matters into your own hands", "next": "handleItYourself" }
+      ]
+    },
+    "detectiveCooperation": {
+      "text": "{detectiveName} finds disturbing information about {loverName}. You realize the situation is more serious than you thought.",
+      "choices": [
+        { "text": "Go to the police", "next": "policeIntervention" },
+        { "text": "Confront him", "next": "confrontation" }
+      ]
+    },
+    "handleItYourself": {
+      "text": "You decide to handle things on your own. The confrontation with {loverName} becomes inevitable.",
+      "choices": [
+        { "text": "Direct confrontation", "next": "confrontation" },
+        { "text": "Try to escape the town", "next": "escapeTown" }
+      ]
+    },
+    "policeIntervention": {
+      "text": "You go to the police. They take your concerns seriously and decide to investigate {loverName}.",
+      "choices": [
+        { "text": "Cooperate with police", "next": "ending_police" },
+        { "text": "Take matters into your own hands", "next": "handleItYourself" }
+      ]
+    },
+    "confrontation": {
+      "text": "You confront {loverName} directly. They reveal their true nature, showing signs of violence and desperation.",
+      "choices": [
+        { "text": "Fight back", "next": "ending_violent" },
+        { "text": "Try to escape", "next": "ending_escape" }
+      ]
+    },
+    "escapeTown": {
+      "text": "You decide to leave the town in the middle of the night, hoping to escape {loverName}'s obsession.",
+      "choices": [
+        { "text": "Reach out to family", "next": "familyHelp" },
+        { "text": "Go alone", "next": "ending_escape" }
+      ]
+    },
+    "familyHelp": {
+      "text": "{familyMemberName} helps you plan your escape. Together, you leave the town, hoping for a fresh start.",
+      "choices": [
+        { "text": "Move to a new city", "next": "ending_newCity" },
+        { "text": "Stay with family for a while", "next": "ending_stayWithFamily" }
+      ]
+    },
+    "ending_police": {
+      "text": "The police arrest {loverName}. You're safe, but the trauma of the experience stays with you.",
+      "choices": [{ "text": "Restart", "next": "intro" }]
+    },
+    "ending_violent": {
+      "text": "In a tragic turn of events, {loverName} becomes violent, leading to a confrontation that ends badly for both of you.",
+      "choices": [{ "text": "Restart", "next": "intro" }]
+    },
+    "ending_escape": {
+      "text": "You manage to escape the town, leaving {loverName} behind. The experience haunts you, but you're free.",
+      "choices": [{ "text": "Restart", "next": "intro" }]
+    },
+    "ending_selfRealization": {
+      "text": "You realize the depth of {loverName}'s obsession and take steps to protect yourself, eventually leaving the town for good.",
+      "choices": [{ "text": "Restart", "next": "intro" }]
+    },
+    "ending_newCity": {
+      "text": "You move to a new city and start fresh. The memory of {loverName} fades over time, and you find peace.",
+      "choices": [{ "text": "Restart", "next": "intro" }]
+    },
+    "ending_stayWithFamily": {
+      "text": "You stay with {familyMemberName} for a while. Their support helps you recover from the ordeal, and you eventually find happiness again.",
+      "choices": [{ "text": "Restart", "next": "intro" }]
+    }
+  }
+}
