@@ -51,4 +51,5 @@ body {
 }
 #image {
   width: 100%;
+  transition: opacity 3s ease-in-out;
 }
