@@ -5,8 +5,7 @@
   "people": [
     { "role": "{loverName}", "name": "Jordan" },
     { "role": "{friendName}", "name": "Skylar" },
-    { "role": "{detectiveName}", "name": "Finley" },
-    { "role": "{familyMemberName}", "name": "Casey" }
+    { "role": "{detectiveName}", "name": "Finley" }
   ],
   "steps": {
     "intro": {
