@@ -94,7 +94,7 @@ window.onload = function() {
       updateRoles(node);
       updateOptions(node, storyPath);
       image.src = "stories/" + storyPath + "/" + nodeId + storyData.img_types
-      startSlideShow(image, [image.src, "stories/yourlover/firstEncounter_distant.png"]);
+      startSlideShow(image, [image.src]);
   }
 
   function updateRoles(node) {
