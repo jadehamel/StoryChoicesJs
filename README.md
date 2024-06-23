@@ -31,7 +31,7 @@ Client-side customizable game where players create their own story through inter
 
    ```javascript
    const storyPath = "yourlover";  // Replace with your story folder name
-   const playerName = prompt("What's your name?");  // Prompt to get player's name
+   const playerName = "Pineapple";  // Default player's name
    ```
 
 ## Creating a New Story
