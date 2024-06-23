@@ -25,7 +25,8 @@ window.onload = function() {
   yourNameInput.type = 'text';
   yourNameInput.id = 'yourName';
   yourNameInput.name = 'yourName';
-  yourNameInput.required = true;
+  yourNameInput.required = false;
+  yourNameInput.placeholder = playerName;
   
   //custom Persona preset on start screen
   const familyMemberNameLabel = document.createElement('label');
@@ -35,7 +36,8 @@ window.onload = function() {
   familyMemberNameInput.type = 'text';
   familyMemberNameInput.id = 'familyMemberName';
   familyMemberNameInput.name = 'familyMemberName';
-  familyMemberNameInput.required = true;
+  familyMemberNameInput.required = false;
+  familyMemberNameInput.placeholder = familyMemberName;
   
   const continueButton = document.createElement('button');
   continueButton.type = 'button';
