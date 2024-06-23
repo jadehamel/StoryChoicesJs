@@ -9,13 +9,11 @@ window.onload = function() {
   const story = document.getElementById('story');
   const options = document.getElementById('options');
   const image = document.getElementById('image');
+  const startScreen = document.createElement('div');
+  const form = document.createElement('form');
   let currentIndex = 0;
 
-  //Introducing start screen
-  const startScreen = document.createElement('div');
   startScreen.id = 'StartScreen';
-  
-  const form = document.createElement('form');
   form.id = 'startForm';
   
   const yourNameLabel = document.createElement('label');
@@ -122,15 +120,15 @@ window.onload = function() {
   function startSlideShow(image, images) {
     images.src = images[currentIndex];
     setTimeout(() => {
-      image.style.opacity = 1; // Change opacity to 1 to trigger the fade-in
+      image.style.opacity = 1;
     }, 5000);
     if (images.length > 1) {
       setTimeout(() => {
         if (currentIndex < images.length - 1) {
           currentIndex++;
-          setTimeout(startSlideShow(image, images), 3000); // Wait for the fade-out transition to complete before changing the image
+          setTimeout(startSlideShow(image, images), 3000);
         }
-      }, 8000); // Display image for 5 seconds + 3 seconds fade-in time
+      }, 8000);
     } else {
       image.style.opacity = 1;
       currentIndex = 0;
