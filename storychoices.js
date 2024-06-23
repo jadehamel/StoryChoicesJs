@@ -5,6 +5,7 @@ window.onload = function() {
   const storyPath = "yourlover";
   loadStyles();
   let playerName = "Pineapple";
+  let familyMemberName = "CASEY";
   const story = document.getElementById('story');
   const options = document.getElementById('options');
   const image = document.getElementById('image');
@@ -27,14 +28,14 @@ window.onload = function() {
   yourNameInput.required = true;
   
   //custom Persona preset on start screen
-  // const familyMemberNameLabel = document.createElement('label');
-  // familyMemberNameLabel.for = 'familyMemberName';
-  // familyMemberNameLabel.textContent = 'Family member name:';
-  // const familyMemberNameInput = document.createElement('input');
-  // familyMemberNameInput.type = 'text';
-  // familyMemberNameInput.id = 'familyMemberName';
-  // familyMemberNameInput.name = 'familyMemberName';
-  // familyMemberNameInput.required = true;
+  const familyMemberNameLabel = document.createElement('label');
+  familyMemberNameLabel.for = 'familyMemberName';
+  familyMemberNameLabel.textContent = 'Family member name:';
+  const familyMemberNameInput = document.createElement('input');
+  familyMemberNameInput.type = 'text';
+  familyMemberNameInput.id = 'familyMemberName';
+  familyMemberNameInput.name = 'familyMemberName';
+  familyMemberNameInput.required = true;
   
   const continueButton = document.createElement('button');
   continueButton.type = 'button';
@@ -43,9 +44,9 @@ window.onload = function() {
   
   form.appendChild(yourNameLabel);
   form.appendChild(yourNameInput).value.toUpperCase();
-  //hidding feature in dev. (using new property from json for certain roles to be set by the player on Start)
-  //form.appendChild(familyMemberNameLabel);
-  // form.appendChild(familyMemberNameInput);
+  //Custom persona
+  form.appendChild(familyMemberNameLabel);
+  form.appendChild(familyMemberNameInput).value.toUpperCase();
   form.appendChild(continueButton);
 
   startScreen.appendChild(form);
@@ -54,8 +55,10 @@ window.onload = function() {
   
   continueButton.onclick = function() {
     let yourName = document.getElementById('yourName').value;
-    // let familyMemberName = document.getElementById('familyMemberName').value;
-    playerName = yourName;
+    //custom Persona
+    let family = document.getElementById('familyMemberName').value;
+    if (yourName != '') playerName = yourName;
+    if (family != '') familyMemberName = family;
     startScreen.style.display = 'none';
     loadGame();
   };
@@ -75,6 +78,7 @@ window.onload = function() {
         }
         storyData = await response.json();
         storyData.people.push({ role: "{playerName}", name: playerName });
+        storyData.people.push({ role: "{familyMemberName}", name: familyMemberName });
         document.getElementById('title').textContent = storyData.title;
         updateStory(storyPath, storyData.intro_stepname);
     } catch (error) {
