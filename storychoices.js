@@ -3,9 +3,9 @@
 window.onload = function() {
   //Path (images, JSON & Stylesheet) of the story in "stories/{storyPath}/"
   const storyPath = "yourlover";
+  let playerName = "Pineapple"; //Default player
+  let familyMemberName = "CASEY"; //Default custom persona
   loadStyles();
-  let playerName = "Pineapple";
-  let familyMemberName = "CASEY";
   const story = document.getElementById('story');
   const options = document.getElementById('options');
   const image = document.getElementById('image');
@@ -31,7 +31,7 @@ window.onload = function() {
   //custom Persona preset on start screen
   const familyMemberNameLabel = document.createElement('label');
   familyMemberNameLabel.for = 'familyMemberName';
-  familyMemberNameLabel.textContent = 'Family member name:';
+  familyMemberNameLabel.textContent = 'Family member name';
   const familyMemberNameInput = document.createElement('input');
   familyMemberNameInput.type = 'text';
   familyMemberNameInput.id = 'familyMemberName';
