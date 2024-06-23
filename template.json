@@ -1,0 +1,39 @@
+{
+  "title": "Your Lover Game",
+  "img_types": ".png",
+  "intro_stepname": "intro",
+  "people": [
+    { "role": "{loverName}", "name": "Jordan" },
+    { "role": "{friendName}", "name": "Skylar" }
+  ],
+  "steps": {
+    "intro": {
+      "text": "You, {playerName}, have just moved to a new town. It's quiet and seems like the perfect place to start fresh. One day, while at a local café, you meet {loverName}. They seem charming and friendly.",
+      "choices": [
+        { "text": "Be friendly", "next": "firstEncounter_friendly" },
+        { "text": "Be distant", "next": "firstEncounter_distant" }
+      ]
+    },
+    "firstEncounter_friendly": {
+      "text": "{loverName} smiles warmly at you. 'It's nice to meet someone new in town,' they say. Over the next few days, you notice {loverName} showing up wherever you go. You also start making friends, including {friendName}, who becomes quite close to you.",
+      "choices": [
+        { "text": "Move from the city", "next": "ending_one" },
+        { "text": "Ignore them", "next": "firstEncounter_distant" },
+      ]
+    },
+    "firstEncounter_distant": {
+      "text": "{loverName} seems taken aback by your distance but doesn't push further. Over the next few days, you notice {loverName} showing up wherever you go. You also start making friends, including {friendName}, who becomes quite close to you.",
+      "choices": [
+        { "text": "Stay with your friend", "next": "ending_two" },
+        { "text": "Ignore them", "next": "firstEncounter_friendly" }      ]
+    },
+    "ending_one": {
+      "text": "You move to a new city and start fresh and you died getting hit by a car.",
+      "choices": [{ "text": "RESTART", "next": "intro" }]
+    },
+    "ending_two": {
+      "text": "You stay with {friendName} for a while and you eventually find happiness again.",
+      "choices": [{ "text": "RESTART", "next": "intro" }]
+    }
+  }
+}
