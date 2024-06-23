@@ -26,14 +26,15 @@ window.onload = function() {
   yourNameInput.name = 'yourName';
   yourNameInput.required = true;
   
-  const familyMemberNameLabel = document.createElement('label');
-  familyMemberNameLabel.for = 'familyMemberName';
-  familyMemberNameLabel.textContent = 'Family member name:';
-  const familyMemberNameInput = document.createElement('input');
-  familyMemberNameInput.type = 'text';
-  familyMemberNameInput.id = 'familyMemberName';
-  familyMemberNameInput.name = 'familyMemberName';
-  familyMemberNameInput.required = true;
+  //custom Persona preset on start screen
+  // const familyMemberNameLabel = document.createElement('label');
+  // familyMemberNameLabel.for = 'familyMemberName';
+  // familyMemberNameLabel.textContent = 'Family member name:';
+  // const familyMemberNameInput = document.createElement('input');
+  // familyMemberNameInput.type = 'text';
+  // familyMemberNameInput.id = 'familyMemberName';
+  // familyMemberNameInput.name = 'familyMemberName';
+  // familyMemberNameInput.required = true;
   
   const continueButton = document.createElement('button');
   continueButton.type = 'button';
@@ -43,8 +44,8 @@ window.onload = function() {
   form.appendChild(yourNameLabel);
   form.appendChild(yourNameInput).value.toUpperCase();
   //hidding feature in dev. (using new property from json for certain roles to be set by the player on Start)
-  form.appendChild(familyMemberNameLabel).style.display = 'none';
-  form.appendChild(familyMemberNameInput).style.display = 'none';
+  //form.appendChild(familyMemberNameLabel);
+  // form.appendChild(familyMemberNameInput);
   form.appendChild(continueButton);
 
   startScreen.appendChild(form);
@@ -53,7 +54,7 @@ window.onload = function() {
   
   continueButton.onclick = function() {
     let yourName = document.getElementById('yourName').value;
-    let familyMemberName = document.getElementById('familyMemberName').value;
+    // let familyMemberName = document.getElementById('familyMemberName').value;
     playerName = yourName;
     startScreen.style.display = 'none';
     loadGame();
