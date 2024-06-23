@@ -54,7 +54,6 @@ window.onload = function() {
   startScreen.appendChild(form);
 
   document.getElementById('container').appendChild(startScreen);
-  
   continueButton.onclick = function() {
     let yourName = document.getElementById('yourName').value;
     //custom Persona
