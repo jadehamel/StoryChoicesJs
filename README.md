@@ -25,7 +25,7 @@ Client-side customizable game where players create their own story through inter
    - Create a JSON file named `story.json` in `stories/{storyPath}/` to define your story's structure (details below).
    - Optionally, customize styles in `stories/{storyPath}/style.css`.
 
-3. **Modify `index.html`:**
+3. **Modify `storychoices.js`:**
 
    Update the following variables in `storychoices.js` to match your story:
 
