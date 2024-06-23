@@ -89,6 +89,15 @@ window.onload = function() {
     loadStoryData();
   }
 
+  function loadImages(imageUrls) {
+    const imageContainer = document.getElementById('image-container');
+    imageUrls.forEach(url => {
+      const img = document.createElement('img');
+      img.src = 'stories/' + storyPath + '/' + url + storyData.img_types;
+      imageContainer.appendChild(img);
+    });
+  }
+
   function updateStory(storyPath, nodeId) {
       const node = storyData.steps[nodeId];
       updateRoles(node);
@@ -109,12 +118,15 @@ window.onload = function() {
 
   function updateOptions(node, storyName) {
     options.innerHTML = '';
+    nextImages = [];
     node.choices.forEach(choice => {
       let button = document.createElement('button');
       button.textContent = choice.text;
       button.onclick = () => updateStory(storyName, choice.next);
       options.appendChild(button);
+      nextImages.push(choice.next);
     });
+    loadImages(nextImages);
   };
 
   function startSlideShow(image, images) {
@@ -138,5 +150,4 @@ window.onload = function() {
   function startGame(storyName, step) {
     updateStory(storyName, step);
   };
-
 };
