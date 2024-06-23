@@ -42,7 +42,7 @@ window.onload = function() {
   const continueButton = document.createElement('button');
   continueButton.type = 'button';
   continueButton.id = 'continueButton';
-  continueButton.textContent = 'Continue';
+  continueButton.textContent = 'PLAY';
   
   form.appendChild(yourNameLabel);
   form.appendChild(yourNameInput).value.toUpperCase();
