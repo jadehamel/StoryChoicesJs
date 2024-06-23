@@ -4,67 +4,80 @@
 
 body {
   font-family: "Playwrite AU NSW", cursive;
-  font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
   background-color: #1a1a1a;
   color: #f5f5f5;
-  font-size: 40px;
+  font-size: 24px;
   margin: 0;
-  padding: 10px;
+  padding: 0;
 }
+
 #game {
-  margin: -20px 20px 15px 20px auto;
+  margin: 20px auto;
   padding: 20px;
   background-color: #333;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  max-width: 800px;
 }
+
 #title {
   font-family: "Bebas Neue", sans-serif;
-  font-optical-sizing: auto;
   font-weight: 100;
   font-style: normal;
-  font-size: 80px;
+  font-size: 60px;
   text-align: center;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
+
 #options {
   text-align: center;
+  margin-top: 20px;
 }
+
 button {
+  position: relative;
   background-color: #444;
   color: #f5f5f5;
   border: none;
-  padding: 10px;
+  padding: 15px 30px;
   margin: 15px;
   border-radius: 5px;
   cursor: pointer;
-  height: 50 px;
   font-family: "Playwrite DE Grund", cursive;
-  font-optical-sizing: auto;
   font-weight: 400;
-  font-size: 30px;
+  font-size: 24px;
   font-style: normal;
-  align-items: center;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
 }
+
 button:hover {
   background-color: #555;
 }
+
 #image {
   width: 100%;
-  transition: opacity 3s ease-in-out;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
+
 #container {
   margin: 0;
   padding: 0;
   width: 100%;
   background-color: black;
 }
+
 #StartScreen {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  height: 100vh;
   width: 100%;
   background-color: #000000;
 }
@@ -73,25 +86,42 @@ button:hover {
   margin: 20px;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
 }
 
 #startForm label {
-  margin: 5px 0;
+  margin: 10px 0;
 }
 
 #startForm input {
-  margin: 5px 0;
   height: 50px;
-  width: 450px;
+  width: 400px;
   font-family: "Playwrite DE Grund", cursive;
-  font-optical-sizing: auto;
   font-weight: 400;
-  font-size: 30px;
+  font-size: 24px;
   font-style: normal;
   text-align: center;
+  padding: 0 10px;
+  border: 2px solid #444;
+  border-radius: 5px;
+  outline: none;
 }
 
 #continueButton {
   width: 430px;
+  font-size: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding: 15px 30px;
+  margin-top: 20px;
+  border-radius: 5px;
+  background-color: #444;
+  color: #f5f5f5;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#continueButton:hover {
+  background-color: #555;
 }
