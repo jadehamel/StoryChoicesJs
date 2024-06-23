@@ -134,27 +134,27 @@
     },
     "ending_police": {
       "text": "The police arrest {loverName}. You're safe, but the trauma of the experience stays with you.",
-      "choices": [{ "text": "Restart", "next": "intro" }]
+      "choices": [{ "text": "RESTART", "next": "intro" }]
     },
     "ending_violent": {
       "text": "In a tragic turn of events, {loverName} becomes violent, leading to a confrontation that ends badly for both of you.",
-      "choices": [{ "text": "Restart", "next": "intro" }]
+      "choices": [{ "text": "RESTART", "next": "intro" }]
     },
     "ending_escape": {
       "text": "You manage to escape the town, leaving {loverName} behind. The experience haunts you, but you're free.",
-      "choices": [{ "text": "Restart", "next": "intro" }]
+      "choices": [{ "text": "RESTART", "next": "intro" }]
     },
     "ending_selfRealization": {
       "text": "You realize the depth of {loverName}'s obsession and take steps to protect yourself, eventually leaving the town for good.",
-      "choices": [{ "text": "Restart", "next": "intro" }]
+      "choices": [{ "text": "RESTART", "next": "intro" }]
     },
     "ending_newCity": {
       "text": "You move to a new city and start fresh. The memory of {loverName} fades over time, and you find peace.",
-      "choices": [{ "text": "Restart", "next": "intro" }]
+      "choices": [{ "text": "RESTART", "next": "intro" }]
     },
     "ending_stayWithFamily": {
       "text": "You stay with {familyMemberName} for a while. Their support helps you recover from the ordeal, and you eventually find happiness again.",
-      "choices": [{ "text": "Restart", "next": "intro" }]
+      "choices": [{ "text": "RESTART", "next": "intro" }]
     }
   }
 }

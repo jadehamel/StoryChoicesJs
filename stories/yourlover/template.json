@@ -1,0 +1,43 @@
+{
+  "title": "Your Lover Game",
+  "img_types": ".png",
+  "intro_stepname": "intro",
+  "people": [
+    { "role": "{loverName}", "name": "Jordan" },
+    { "role": "{friendName}", "name": "Skylar" },
+    { "role": "{detectiveName}", "name": "Finley" }
+  ],
+  "steps": {
+    "intro": {
+      "text": "You, {playerName}, have just moved to a new town. It's quiet and seems like the perfect place to start fresh. One day, while at a local café, you meet {loverName}. They seem charming and friendly.",
+      "choices": [
+        { "text": "Be friendly", "next": "firstEncounter_friendly" },
+        { "text": "Be distant", "next": "firstEncounter_distant" }
+      ]
+    },
+    "firstEncounter_friendly": {
+      "text": "{loverName} smiles warmly at you. 'It's nice to meet someone new in town,' they say. Over the next few days, you notice {loverName} showing up wherever you go. You also start making friends, including {friendName}, who becomes quite close to you.",
+      "choices": [
+        { "text": "Confront them", "next": "growingObsession_confront" },
+        { "text": "Ignore them", "next": "growingObsession_ignore" },
+        { "text": "Seek help", "next": "growingObsession_help" }
+      ]
+    },
+    "firstEncounter_distant": {
+      "text": "{loverName} seems taken aback by your distance but doesn't push further. Over the next few days, you notice {loverName} showing up wherever you go. You also start making friends, including {friendName}, who becomes quite close to you.",
+      "choices": [
+        { "text": "Confront them", "next": "growingObsession_confront" },
+        { "text": "Ignore them", "next": "growingObsession_ignore" },
+        { "text": "Seek help", "next": "growingObsession_help" }
+      ]
+    },
+    "ending_step_name": {
+      "text": "You move to a new city and start fresh. The memory of {loverName} fades over time, and you find peace.",
+      "choices": [{ "text": "RESTART", "next": "intro" }]
+    },
+    "ending_step_name": {
+      "text": "You stay with {familyMemberName} for a while. Their support helps you recover from the ordeal, and you eventually find happiness again.",
+      "choices": [{ "text": "RESTART", "next": "intro" }]
+    }
+  }
+}

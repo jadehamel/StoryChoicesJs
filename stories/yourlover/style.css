@@ -13,13 +13,19 @@ body {
   padding: 0;
 }
 
+#image-container img {  
+  width: 0px;
+  height: auto;
+  display: none;
+}
+
 #game {
   margin: 20px auto;
   padding: 20px;
   background-color: #333;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
-  max-width: 800px;
+  max-width: 100%;
 }
 
 #title {
@@ -44,7 +50,6 @@ button {
   border: none;
   padding: 15px 30px;
   margin: 15px;
-  border-radius: 5px;
   cursor: pointer;
   font-family: "Playwrite DE Grund", cursive;
   font-weight: 400;
@@ -52,6 +57,8 @@ button {
   font-style: normal;
   text-transform: uppercase;
   transition: background-color 0.3s ease;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
 button:hover {
