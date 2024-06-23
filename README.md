@@ -38,7 +38,7 @@ Client-side customizable game where players create their own story through inter
 
 To create a new story, follow these steps:
 
-1. **Define Story Structure (`story.json`) of edit and rename `template.json`:**
+1. **Define Story Structure (`story.json`) or edit and rename `template.json`:**
 
    ```json
    {
