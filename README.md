@@ -27,7 +27,7 @@ Client-side customizable game where players create their own story through inter
 
 3. **Modify `index.html`:**
 
-   Update the following variables in `index.html` to match your story:
+   Update the following variables in `storychoices.js` to match your story:
 
    ```javascript
    const storyPath = "yourlover";  // Replace with your story folder name
