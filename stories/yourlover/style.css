@@ -83,11 +83,15 @@ button:hover {
 #startForm input {
   margin: 5px 0;
   height: 50px;
-  width: 400px;
+  width: 450px;
   font-family: "Playwrite DE Grund", cursive;
   font-optical-sizing: auto;
   font-weight: 400;
   font-size: 30px;
   font-style: normal;
   text-align: center;
+}
+
+#continueButton {
+  width: 430px;
 }
