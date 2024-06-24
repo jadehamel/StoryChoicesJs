@@ -13,6 +13,10 @@ body {
   padding: 0;
 }
 
+#audio {
+  visibility: hidden;
+}
+
 #image-container img {  
   width: 0px;
   height: auto;
