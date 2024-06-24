@@ -79,6 +79,7 @@ window.onload = function() {
         storyData.people.push({ role: "{playerName}", name: playerName });
         storyData.people.push({ role: "{familyMemberName}", name: familyMemberName });
         document.getElementById('title').textContent = storyData.title;
+        loadImages([storyData.intro_stepname]);
         updateStory(storyPath, storyData.intro_stepname);
     } catch (error) {
         console.error('Failed to load story data:', error);
