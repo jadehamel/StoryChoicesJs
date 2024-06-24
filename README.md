@@ -109,7 +109,8 @@ Demo: [https://jadehamel.fr/game](https://jadehamel.fr/game)
    const playerName = "Pineapple";  // Default player's name
    ```
    **Solution for multiple stories in `story/`**
-   Use the parameters `story` and/or `player` in url: index.html`?story=storyPath&player=myName`
+   Use the parameters `story` and/or `player` in url:
+   - index.html`?story=storyPath&player=myName`
 
 ## Creating a New Story
 
