@@ -1,11 +1,12 @@
 {
-  "title": "Your Lover Game",
+  "title": "{mainCharacter}'s Lover Game",
   "img_types": ".png",
   "intro_stepname": "intro",
   "people": [
-    { "role": "{loverName}", "name": "Jordan" },
-    { "role": "{friendName}", "name": "Skylar" },
-    { "role": "{detectiveName}", "name": "Finley" }
+    { "role": "{loverName}", "name": "JORDAN" },
+    { "role": "{familyMemberName}", "name": "CASEY" },
+    { "role": "{friendName}", "name": "SKYLA" },
+    { "role": "{detectiveName}", "name": "FINLEY" }
   ],
   "steps": {
     "intro": {
