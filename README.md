@@ -6,7 +6,85 @@ Client-side customizable game where players create their own story through inter
 
 # Your Choices Story
 
- Your Choices Story (StoryChoicesJs) is a project where you can create interactive stories with choices for the player.
+# Game Functionalities and User Interactions
+
+## JavaScript Functionalities:
+
+### Page Initialization (`init`):
+- Loads the required stylesheets.
+- Displays the start screen where the user can input their name.
+
+### Start Screen:
+- A form to input the user's name, with a default value.
+- A "PLAY" button that hides the start screen and initializes the game with the user's name.
+
+### Game Loading:
+- Fetches story data from a JSON file.
+- Adds the user's name to the story's list of characters.
+- Loads images associated with the introductory step.
+- Displays the introductory step's text and options.
+
+### Story Navigation:
+- Displays the current step's text, interpolated with character names.
+- Displays choices available for the current step.
+- Loads and displays images associated with the current step and choices.
+- Updates the story view based on user choices.
+
+### Image Handling:
+- Loads images dynamically based on story steps.
+- Starts a slideshow of images if there are multiple images for a step.
+
+## CSS Functionalities:
+
+### Global Styles:
+- Sets a global font family, font size, background color, and text color.
+- Defines hidden visibility for audio elements.
+- Styles the container to occupy the full width and height of the screen.
+
+### Game Container:
+- Centers the game container with margins and padding.
+- Applies background color, border radius, and box shadow to the game container.
+
+### Title Styling:
+- Sets a distinct font family, font size, and text shadow for the title.
+- Centers the title text.
+
+### Button Styling:
+- Applies styles to buttons, including background color, font properties, padding, and margins.
+- Adds a hover effect that changes the background color.
+- Uses uppercase text transformation for buttons.
+
+### Image Styling:
+- Sets the image to take the full width of its container, with a defined max-width.
+- Applies border radius and box shadow to images.
+
+### Start Screen:
+- Centers the start screen content vertically and horizontally.
+- Applies a background color and sets the full height and width of the viewport.
+
+### Form Styling:
+- Styles the form to be centered with margin and padding.
+- Styles form labels and inputs, including input dimensions, font properties, and border properties.
+- Styles the continue button with similar properties to the game buttons.
+
+## Detailed User Interactions:
+
+### Loading the Game:
+- When the page loads, the user is greeted with a start screen.
+- The user can enter their name in the input field and press the "PLAY" button to start the game.
+
+### Playing the Game:
+- The game loads with an introductory step, showing the story text and options.
+- The user can read the story text, which includes their name interpolated into the text.
+- The user can make choices by clicking on buttons, which update the story to the next step.
+
+### Interacting with Images:
+- As the user navigates through the story, images related to each step are displayed.
+- If a step has multiple images, a slideshow effect displays these images sequentially.
+
+### Button Interactions:
+- Buttons change color when hovered over, indicating interactivity.
+- Clicking on buttons triggers actions in the game, such as moving to the next story step.
 
 ## Setup
 
