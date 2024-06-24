@@ -158,6 +158,10 @@ To create a new story, follow these steps:
 
    Customize styles in `stories/{storyPath}/style.css` to match your story's theme.
 
+4. **Modify Soundrack (Optional):**
+
+   Use your own `soundtrack.mp3` by replacing the file in the root path
+
 # Running the Game
 
 - Open `index.html` in a web browser or serve it locally using a web server.
