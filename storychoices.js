@@ -109,11 +109,13 @@ window.onload = function() {
 
   function updateRoles(node) {
     let updatedText = node.text;
+    let titleText = storyData.title;
     storyData.people.forEach(person => {
       const regex = new RegExp(person.role, 'g');
       updatedText = updatedText.replace(regex, person.name.toUpperCase());
+      titleText = titleText.replace(regex, person.name.toUpperCase());
     });
-
+    document.getElementById('title').textContent = titleText;
     story.innerHTML = updatedText;
   };
 
