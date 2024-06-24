@@ -106,7 +106,7 @@ Demo: [https://jadehamel.fr/game](https://jadehamel.fr/game)
 
    ```javascript
    const storyPath = "yourlover";  // Replace with your story folder name
-   const playerName = "Pineapple";  // Default player's name
+   const mainCharacter = "Pineapple";  // Default player's name
    ```
    **Solution for multiple stories in `story/`**
    Use the parameters `story` and/or `player` in url:
@@ -123,18 +123,18 @@ To create a new story, follow these steps:
      "title": "Your Story Title",
      "intro_stepname": "start",
      "people": [
-       {"role": "{playerName}", "name": "playerName"}  // Placeholder for player's name
+       {"role": "{mainCharacter}", "name": "mainCharacter"}  // Placeholder for player's name
      ],
      "steps": {
        "start": {
-         "text": "Once upon a time, {playerName} woke up in a mysterious place...",
+         "text": "Once upon a time, {mainCharacter} woke up in a mysterious place...",
          "choices": [
            {"text": "Explore further", "next": "explore"},
            {"text": "Stay put", "next": "stay"}
          ]
        },
        "explore": {
-         "text": "As {playerName} ventured deeper, a strange figure appeared...",
+         "text": "As {mainCharacter} ventured deeper, a strange figure appeared...",
          "choices": [
            {"text": "Approach the figure", "next": "approach"},
            {"text": "Run away", "next": "run"}
@@ -146,7 +146,7 @@ To create a new story, follow these steps:
    }
    ```
 
-   - Replace placeholders like `{playerName}` with appropriate text.
+   - Replace placeholders like `{mainCharacter}` with appropriate text.
 
 2. **Add Images:**
 
