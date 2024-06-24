@@ -4,7 +4,6 @@ window.onload = function() {
   const STORY_PATH = "yourlover"; // Path (images, JSON & Stylesheet) of the story in "stories/{storyPath}/"
   const DEFAULT_CHARACTER = "PINEAPPLE"; // Default player
   let mainCharacter = DEFAULT_CHARACTER;
-  let playerName = mainCharacter;
   let currentIndex = 0;
   let storyData;
 
