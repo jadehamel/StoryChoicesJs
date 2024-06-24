@@ -2,7 +2,7 @@
 Client-side customizable game where players create their own story through interactive choices.
 
 - Demo: [https://jadehamel.fr/game](https://jadehamel.fr/game)
-- Live Version Used by Real Players: [https://jadehamel.fr/game?story=pomni&player=pomni](https://jadehamel.fr/game?story=pomni&player=pomni)
+- Live Version Used by Real Players: [https://jadehamel.fr/game?story=pomni&player=pomni](https://jadehamel.fr/game?story=pomni&player=Pomni)
 
 # Game Functionalities and User Interactions
 
