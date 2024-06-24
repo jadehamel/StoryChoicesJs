@@ -76,7 +76,6 @@ window.onload = function() {
             throw new Error('Network response was not ok ' + response.statusText);
         }
         storyData = await response.json();
-        loadSoundtrack();
         storyData.people.push({ role: "{playerName}", name: playerName });
         storyData.people.push({ role: "{familyMemberName}", name: familyMemberName });
         document.getElementById('title').textContent = storyData.title;
@@ -98,12 +97,6 @@ window.onload = function() {
       img.src = 'stories/' + storyPath + '/' + url + storyData.img_types;
       imageContainer.appendChild(img);
     });
-  }
-
-  function loadSoundtrack() {
-    var audio = document.getElementById('audio');
-    audio.src = 'stories' + storyPath + 'soundtrack.mp3';
-    audio.play();
   }
 
   function updateStory(storyPath, nodeId) {
