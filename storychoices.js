@@ -1,8 +1,10 @@
 // Code by Jade Hamel - https://jadehamel.fr
 
 window.onload = function() {
-  const STORY_PATH = "yourlover"; // Path (images, JSON & Stylesheet) of the story in "stories/{storyPath}/"
-  const DEFAULT_CHARACTER = "PINEAPPLE"; // Default player
+  const queryString = window.location.search;
+  const urlParams = new URLSearchParams(queryString);
+  const STORY_PATH = urlParams.get('story') || "yourlover"; // Path (images, JSON & Stylesheet) of the story in "stories/{storyPath}/"
+  const DEFAULT_CHARACTER = urlParams.get('player') || "PINEAPPLE"; // Default player
   let mainCharacter = DEFAULT_CHARACTER;
   let currentIndex = 0;
   let storyData;
