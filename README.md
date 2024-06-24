@@ -83,9 +83,9 @@ Demo: [https://jadehamel.fr/game](https://jadehamel.fr/game)
 - Buttons change color when hovered over, indicating interactivity.
 - Clicking on buttons triggers actions in the game, such as moving to the next story step.
 
-## Setup
+# Setup
 
-### Getting Started
+## Getting Started
 
 1. **Clone the Repository:**
 
@@ -153,12 +153,12 @@ To create a new story, follow these steps:
 
    Customize styles in `stories/{storyPath}/style.css` to match your story's theme.
 
-## Running the Game
+# Running the Game
 
 - Open `index.html` in a web browser or serve it locally using a web server.
 - The game will prompt the player for their name and begin the story accordingly.
 
-## Contributing
+# Contributing
 
 If you'd like to contribute to this project, fork the repository and submit a pull request. Your contributions are welcome!
 
@@ -167,5 +167,5 @@ If you'd like to contribute to this project, fork the repository and submit a pu
 - **JSON Structure**: Ensure your `story.json` follows a structured format with steps, choices, and image file types specified.
 - **Customization**: Encourage users to customize CSS styles and extend story features as needed.
 
-## License
+### License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
