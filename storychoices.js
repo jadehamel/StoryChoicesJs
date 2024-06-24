@@ -123,7 +123,7 @@ window.onload = function() {
     const nextImages = [];
     node.choices.forEach(choice => {
       const button = document.createElement('button');
-      button.textContent = choice.text;
+      button.textContent = interpolatePersona(choice.text);
       button.onclick = () => updateStory(choice.next);
       optionsElement.appendChild(button);
       nextImages.push(choice.next);
