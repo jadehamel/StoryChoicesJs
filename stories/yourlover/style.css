@@ -136,3 +136,9 @@ button:hover {
 #continueButton:hover {
   background-color: #555;
 }
+
+#version { 
+  text-align: center; 
+  width: 100%; 
+  padding-bottom: 30px;
+}
