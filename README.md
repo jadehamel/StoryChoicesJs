@@ -111,6 +111,8 @@ Demo: [https://jadehamel.fr/game](https://jadehamel.fr/game)
    **Solution for multiple stories in `story/`**
    Use the parameters `story` and/or `player` in url:
    - index.html`?story=storyPath&player=myName`
+   - `story=(customStoryPath)`  Replace with your story folder name
+   - `player=(customMainCharacter)` Default player's name  
 
 ## Creating a New Story
 
