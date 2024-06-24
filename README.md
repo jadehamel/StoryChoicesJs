@@ -1,10 +1,7 @@
 # StoryChoicesJs
 Client-side customizable game where players create their own story through interactive choices.
 
-# Demo
-[https://jadehamel.fr/game](https://jadehamel.fr/game)
-
-# Your Choices Story
+Demo: [https://jadehamel.fr/game](https://jadehamel.fr/game)
 
 # Game Functionalities and User Interactions
 
