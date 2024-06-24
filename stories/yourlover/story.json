@@ -10,7 +10,7 @@
   ],
   "steps": {
     "intro": {
-      "text": "You, {playerName}, have just moved to a new town. It's quiet and seems like the perfect place to start fresh. One day, while at a local café, you meet {loverName}. They seem charming and friendly.",
+      "text": "You, {mainCharacter}, have just moved to a new town. It's quiet and seems like the perfect place to start fresh. One day, while at a local café, you meet {loverName}. They seem charming and friendly.",
       "choices": [
         { "text": "Be friendly", "next": "firstEncounter_friendly" },
         { "text": "Be distant", "next": "firstEncounter_distant" }
