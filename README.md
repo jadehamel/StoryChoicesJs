@@ -91,7 +91,7 @@ Client-side customizable game where players create their own story through inter
 1. **Clone the Repository:**
 
    ```bash
-   git clone https://github.com/jadehamel/your-choices-story.git
+   git clone https://github.com/jadehamel/StoryChoicesJs.git
    cd your-choices-story
    ```
 
