@@ -176,6 +176,3 @@ If you'd like to contribute to this project, fork the repository and submit a pu
 - **File Paths**: Adjust file paths (`stories/{storyPath}/`) according to your project's structure.
 - **JSON Structure**: Ensure your `story.json` follows a structured format with steps, choices, and image file types specified.
 - **Customization**: Encourage users to customize CSS styles and extend story features as needed.
-
-### License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
