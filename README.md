@@ -10,7 +10,7 @@ Client-side customizable game where players create their own story through inter
 
 ### Page Initialization (`init`):
 - Loads the required stylesheets.
-- Displays the start screen where the user can input their name.
+- Displays the start screen where the player can input their name.
 
 ### Start Screen:
 - A form to input the user's name, with a default value.
